@@ -1,0 +1,44 @@
+{
+    "wf": {
+        "Linear": "Linear",
+        "Gauss": "Gauss",
+        "ExpDecay": "ExpDecay",
+        "Constant": "Constant",
+        "Survival": "Survival"
+    },
+    "priority": {
+        "opportunist-attack-then-defend": [
+            1,
+            0,
+            2,
+            3
+        ],
+        "conservative-defend-then-attack": [
+            3,
+            2,
+            0,
+            1
+        ],
+        "agressive": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "defensive": [
+            2,
+            3,
+            0,
+            1
+        ]
+    },
+    "placement": {
+        "cautious": "balance all pressure >0 first, then priority",
+        "tactical": "priority pressure >0 +4 repeatedly"
+    },
+    "attack": {
+        "rusher": 2,
+        "carry": 4
+    },
+    "help": "1. wf: weight function/metric. i.e. Threat-perception. Use only the last two. \n2. Sequence of enumerating sublists of priority list. See priority-alg.js. Use only the last two. \n3. Placement in priority lists to balance pressure with threshold t. \ncautious: balance all your priority pressure > 0 first, then extra +t for priority \ntactical: priority pressure >t +=t repeatedly. \n4. Pressure threshold at target to init attack. Also used in keeping cards: rusher: always trade in when can, threshold = 2. \ncarry: accumulate forces and attack when likely to win."
+}
