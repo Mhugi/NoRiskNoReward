@@ -77,6 +77,8 @@ class RandomBot(object):
         # Place reinformements on your cells
         try:
             self.reinforcments(move, turn_num, reinforcement_count, world)
+        except NotImplementedError , err:
+            move = Bot.assign_random_reinforcements(self, move, turn_num, reinforcement_count, world)
         except Exception, err:
             try:
                 print ("ERROR: An exception of type %s occured with the following message %s\n" %
