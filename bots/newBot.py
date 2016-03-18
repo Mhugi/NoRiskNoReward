@@ -114,9 +114,6 @@ class Bot(RandomBot):
     
     def move_and_attack(self, move, turn_num,reinforcement_count,world):
         all_my_cells = list(world.get_my_cells())
-        for _ in range(reinforcement_count):
-            cell = random.choice(all_my_cells)
-            world.add_reinforcement(move, cell, 1)
 
         for cell in all_my_cells:
           all_my_adj_cells = world.get_adj_cells(cell)
