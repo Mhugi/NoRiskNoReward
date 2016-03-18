@@ -35,7 +35,7 @@ def get_k_subsets(n, k):
     return get_k_subsets_aux(n, k, [], [])
 
 
-class SmartBot(object):
+class Bot(object):
     def __init__(self):
         pass
 
@@ -157,3 +157,4 @@ class SmartBot(object):
                 traceback.print_exc()
 
         return move
+ow 
