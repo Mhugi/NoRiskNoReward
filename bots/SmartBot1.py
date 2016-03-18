@@ -1,11 +1,32 @@
+from warhead.protocol.ttypes import Move
+
+
 class Bot(object):
     def __init__(self):
         pass
 
+    checked_pressure = {}
+
+    # Retruns the average number of enemy solder
+    # that might attack a cell
+    def calc_cell_pressure(self, world, cell):
+        if cell in self.checked_pressure:
+            return self.checked_pressure[cell]
+
+        adj =  world.get_adj_cells(cell)
+
+        if(adj == 0)
+            self.checked_pressure[cell] = 0
+            return 0
+
+        adj_armies = sum([cell.armySize for cell in adj])
+        self.checked_pressure[cell] = adj_armies / len(adj_armies)
+
+        return self.checked_pressure[cell]
+
     #
-    def sort_cells_by_pressure(self, ):
-        # TOOD:
-        return []
+    def sort_cells_by_pressure(self, world, cells = []):
+        return cells.sort(key=(lambda x: self.calc_cell_pressure(world,x)))
 
     def get_move_for_turn(self, turn_num, reinforcement_count, world):
         move = Move([], [])
