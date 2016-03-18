@@ -157,4 +157,3 @@ class Bot(object):
                 traceback.print_exc()
 
         return move
-ow 

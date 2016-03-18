@@ -111,7 +111,7 @@
         <entry file="file://$PROJECT_DIR$/bots/SmartBot1.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.19480519">
-              <caret line="159" column="3" selection-start-line="159" selection-start-column="3" selection-end-line="159" selection-end-column="3" />
+              <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
               <folding>
                 <element signature="e#167#698#0" expanded="false" />
                 <element signature="e#730#961#0" expanded="false" />
@@ -905,7 +905,7 @@
     <entry file="file://$PROJECT_DIR$/bots/SmartBot1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19480519">
-          <caret line="159" column="3" selection-start-line="159" selection-start-column="3" selection-end-line="159" selection-end-column="3" />
+          <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
           <folding>
             <element signature="e#167#698#0" expanded="false" />
             <element signature="e#730#961#0" expanded="false" />
