@@ -3,6 +3,7 @@ from warhead.protocol.ttypes import *
 from warhead.util import *
 
 import random
+import traceback
 
 def get_k_subsets_aux(n, k, current_k_sum, calculated_k_sums):
     if len(current_k_sum) == k:
@@ -64,34 +65,43 @@ class Bot(object):
 
         return move
 
+    def reinforcements(self, turn_num, reinforcement_count, world):
+        raise NotImplementedError("Place your own reinforment logic here")
+
+    def move_and_attack(self, turn_num, reinforcement_count, world):
+        raise NotImplementedError("Place your own move / attack logic here")
+
     def get_move_for_turn(self, turn_num, reinforcement_count, world):
         move = Move([], [])
         
         # Place reinformements on your cells
         try:
-            raise NotImplementedError("Place your own reinforment logic here")
+            self.reinformements(turn_num, reinforcement_count, world)
         except Exception, err:
             try:
                 print ("ERROR: An exception of type %s occured with the following message %s\n" %
                        (str(type(err)), str(err)) + "Assigning a random reinforcement move.")
+                traceback.print_exc()
                 move = Bot.assign_random_reinforcements(self, move, turn_num, reinforcement_count, world)
                 
             except Exception, random_err:
                 print ("ERROR: An exception of type %s occured during RANDOM MOVE with the following message %s\n" %
                        (str(type(random_err)), str(random_err)))
+                traceback.print_exc()
             
         # Move forces / attack
         try:
-            raise NotImplementedError("Place your own move / attack logic here")
-            
+            self.move_and_attack(turn_num, reinforcement_count, world)
         except Exception, err:
             try:
                 print ("ERROR: An exception of type %s occured with the following message %s\n" %
                        (str(type(err)), str(err)) + "Assigning a random reinforcement move.")
+                traceback.print_exc()
                 move = Bot.assign_random_attacks(self, move, turn_num, reinforcement_count, world)
                 
             except Exception, random_err:
                 print ("ERROR: An exception of type %s occured during RANDOM MOVE with the following message %s\n" %
                        (str(type(random_err)), str(random_err)))
+                traceback.print_exc()
 
         return move
