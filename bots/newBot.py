@@ -19,7 +19,7 @@ def get_k_subsets_aux(n, k, current_k_sum, calculated_k_sums):
 
             calculated_k_sums = get_k_subsets_aux(n, k, list(test_k_sum), calculated_k_sums)
             # print calculated_k_sums
-        
+
     return calculated_k_sums
 
 
@@ -43,7 +43,7 @@ class RandomBot(object):
         for _ in range(reinforcement_count):
             cell = random.choice(all_my_cells)
             world.add_reinforcement(move, cell, 1)
-        
+
         return move
 
     def assign_random_attacks(self, move, turn_num, reinforcement_count, world):
@@ -54,7 +54,7 @@ class RandomBot(object):
                 continue
 
             cell_army_num = cell.armySize
-            
+
             all_sets_of_attacks = get_k_subsets(cell_army_num, len(all_my_adj_cells) + 1)
             attack_vector = random.choice(all_sets_of_attacks)
 
@@ -73,7 +73,7 @@ class RandomBot(object):
 
     def get_move_for_turn(self, turn_num, reinforcement_count, world):
         move = Move([], [])
-        
+
         # Place reinformements on your cells
         try:
             self.reinforcments(move, turn_num, reinforcement_count, world)
@@ -85,12 +85,12 @@ class RandomBot(object):
                        (str(type(err)), str(err)) + "Assigning a random reinforcement move.")
                 traceback.print_exc()
                 move = Bot.assign_random_reinforcements(self, move, turn_num, reinforcement_count, world)
-                
+
             except Exception, random_err:
                 print ("ERROR: An exception of type %s occured during RANDOM MOVE with the following message %s\n" %
                        (str(type(random_err)), str(random_err)))
                 traceback.print_exc()
-            
+
         # Move forces / attack
         try:
             self.move_and_attack(move, turn_num, reinforcement_count, world)
@@ -100,7 +100,7 @@ class RandomBot(object):
                        (str(type(err)), str(err)) + "Assigning a random reinforcement move.")
                 traceback.print_exc()
                 move = Bot.assign_random_attacks(self, move, turn_num, reinforcement_count, world)
-                
+
             except Exception, random_err:
                 print ("ERROR: An exception of type %s occured during RANDOM MOVE with the following message %s\n" %
                        (str(type(random_err)), str(random_err)))
@@ -117,6 +117,7 @@ class Bot(RandomBot):
 
         for cell in all_my_cells:
           all_my_adj_cells = world.get_adj_cells(cell)
+          cell_army_num = cell.armySize
           if len(all_my_adj_cells) == 0:
                 continue
           elif len(all_my_adj_cells) == 1: 
