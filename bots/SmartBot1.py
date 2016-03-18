@@ -63,7 +63,7 @@ class SmartBot(object):
 
 
     def assign_random_reinforcements(self, move, turn_num, reinforcement_count, world):
-        all_my_cells = list(world.get_my_cells())
+            all_my_cells = list(world.get_my_cells())
         for _ in range(reinforcement_count):
             cell = random.choice(all_my_cells)
             world.add_reinforcement(move, cell, 1)
@@ -89,8 +89,13 @@ class SmartBot(object):
 
         return move
 
-    def reinforcements(self, turn_num, reinforcement_count, world):
-        raise NotImplementedError("Place your own reinforment logic here")
+    def reinforcements(self,move, turn_num, reinforcement_count, world):
+        all_my_cells = list(world.get_my_cells())
+        for _ in range(reinforcement_count):
+            cell = random.choice(all_my_cells)
+            world.add_reinforcement(move, cell, 1)
+
+        
 
     def move_and_attack(self,move, turn_num, reinforcement_count, world):
             all_my_cells = list(world.get_my_cells())
@@ -114,12 +119,12 @@ class SmartBot(object):
 
             return move
 
-    def get_move_for_turn(self, turn_num, reinforcement_count, world):
+    def get_move_for_turn(self,move, turn_num, reinforcement_count, world):
         move = Move([], [])
 
         # Place reinformements on your cells
         try:
-            self.reinformements(turn_num, reinforcement_count, world)
+            self.reinformements(move, turn_num, reinforcement_count, world)
         except Exception, err:
             try:
                 print ("ERROR: An exception of type %s occured with the following message %s\n" %
