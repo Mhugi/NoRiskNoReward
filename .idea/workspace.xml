@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a08e5fca-84d1-467b-960b-19fdc51b7944" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/helpers/MatrixComputer.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/SmartBot1.py" afterPath="$PROJECT_DIR$/bots/SmartBot1.py" />
     </list>
@@ -28,18 +27,13 @@
     <window id="1">
       <content type="file-editors">
         <state>
-          <leaf>
+          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
             <file leaf-file-name="graph.py" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/helpers/graph.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="0.7436709">
+                  <state vertical-scroll-proportion="0.0">
                     <caret line="156" column="6" selection-start-line="156" selection-start-column="6" selection-end-line="156" selection-end-column="6" />
-                    <folding>
-                      <element signature="e#3151#3672#0" expanded="false" />
-                      <element signature="e#3828#4100#0" expanded="false" />
-                      <element signature="e#4178#4551#0" expanded="false" />
-                      <element signature="e#4715#6574#0" expanded="false" />
-                    </folding>
+                    <folding />
                   </state>
                 </provider>
               </entry>
@@ -54,17 +48,20 @@
     <favorites_list name="NoRiskNoReward" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="random_bot.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bots/random_bot.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+              <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
               <folding>
-                <element signature="e#149#686#0" expanded="false" />
-                <element signature="e#718#945#0" expanded="false" />
-                <element signature="e#718#850#1" expanded="false" />
-                <element signature="e#999#1003#0" expanded="false" />
+                <element signature="e#166#703#0" expanded="false" />
+                <element signature="e#735#966#0" expanded="false" />
+                <element signature="e#735#867#1" expanded="false" />
+                <element signature="e#1020#1024#0" expanded="false" />
+                <element signature="e#1122#1335#0" expanded="false" />
+                <element signature="e#1426#2060#0" expanded="false" />
+                <element signature="e#2143#2209#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -83,10 +80,17 @@
       <file leaf-file-name="SmartBot1.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bots/SmartBot1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9245902">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.3327869">
+              <caret line="44" column="40" selection-start-line="0" selection-start-column="0" selection-end-line="149" selection-end-column="19" />
               <folding>
-                <element signature="e#94#98#0" expanded="false" />
+                <element signature="e#166#695#0" expanded="false" />
+                <element signature="e#727#958#0" expanded="false" />
+                <element signature="e#727#859#1" expanded="false" />
+                <element signature="e#1017#1021#0" expanded="false" />
+                <element signature="e#1797#2002#0" expanded="false" />
+                <element signature="e#2093#2715#0" expanded="false" />
+                <element signature="e#2793#2859#0" expanded="false" />
+                <element signature="e#3760#5338#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -177,6 +181,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Default" />
+        <subPane subId="Project Files" />
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -238,10 +246,6 @@
             </PATH_ELEMENT>
           </PATH>
         </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Default" />
-        <subPane subId="Project Files" />
       </pane>
       <pane id="Scratches" />
     </panes>
@@ -540,27 +544,27 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="24" width="931" height="1056" extended-state="4" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49624062" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33962265" sideWeight="0.49624062" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33910388" sideWeight="0.5037594" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33962265" sideWeight="0.49624062" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -587,66 +591,43 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/bots/random_bot.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/helpers/GraphT2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="57" column="32" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="32" />
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#166#703#0" expanded="false" />
+            <element signature="e#735#966#0" expanded="false" />
+            <element signature="e#735#867#1" expanded="false" />
+            <element signature="e#1020#1024#0" expanded="false" />
+            <element signature="e#1122#1335#0" expanded="false" />
+            <element signature="e#1426#2060#0" expanded="false" />
+            <element signature="e#2143#2209#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/helpers/MatrixComputer.py">
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.5/random.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <caret line="723" column="0" selection-start-line="723" selection-start-column="0" selection-end-line="723" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/warhead/util.py">
+    <entry file="file://$PROJECT_DIR$/bots/SmartBot1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="246" column="0" selection-start-line="246" selection-start-column="0" selection-end-line="246" selection-end-column="0" />
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding>
-            <element signature="e#231#496#0" expanded="false" />
-            <element signature="e#231#453#1" expanded="false" />
-            <element signature="e#537#1163#0" expanded="false" />
-            <element signature="e#537#832#1" expanded="false" />
-            <element signature="e#1182#7879#0" expanded="false" />
-            <element signature="e#1223#1548#0" expanded="false" />
-            <element signature="e#1223#1438#1" expanded="false" />
-            <element signature="e#1585#2093#0" expanded="false" />
-            <element signature="e#1585#2068#1" expanded="false" />
-            <element signature="e#2127#2405#0" expanded="false" />
-            <element signature="e#2127#2380#1" expanded="false" />
-            <element signature="e#2444#2779#0" expanded="false" />
-            <element signature="e#2444#2658#1" expanded="false" />
-            <element signature="e#2817#3137#0" expanded="false" />
-            <element signature="e#2817#3029#1" expanded="false" />
-            <element signature="e#3186#3900#0" expanded="false" />
-            <element signature="e#3186#3706#1" expanded="false" />
-            <element signature="e#3945#4982#0" expanded="false" />
-            <element signature="e#3945#4717#1" expanded="false" />
-            <element signature="e#5047#5810#0" expanded="false" />
-            <element signature="e#5047#5638#1" expanded="false" />
-            <element signature="e#5872#6722#0" expanded="false" />
-            <element signature="e#5872#6493#1" expanded="false" />
-            <element signature="e#6808#7879#0" expanded="false" />
-            <element signature="e#6808#7597#1" expanded="false" />
-            <element signature="e#8411#8792#1" expanded="false" />
-            <element signature="e#9420#10309#0" expanded="false" />
-            <element signature="e#9420#10112#1" expanded="false" />
-            <element signature="e#10355#11138#0" expanded="false" />
-            <element signature="e#10355#10909#1" expanded="false" />
+            <element signature="e#166#695#0" expanded="false" />
+            <element signature="e#727#958#0" expanded="false" />
+            <element signature="e#727#859#1" expanded="false" />
+            <element signature="e#1017#1021#0" expanded="false" />
+            <element signature="e#1797#2002#0" expanded="false" />
+            <element signature="e#2093#2715#0" expanded="false" />
+            <element signature="e#2793#2859#0" expanded="false" />
+            <element signature="e#3760#5338#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -663,14 +644,115 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/helpers/graph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7436709">
-          <caret line="156" column="6" selection-start-line="156" selection-start-column="6" selection-end-line="156" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bots/random_bot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding>
-            <element signature="e#3151#3672#0" expanded="false" />
-            <element signature="e#3828#4100#0" expanded="false" />
-            <element signature="e#4178#4551#0" expanded="false" />
-            <element signature="e#4715#6574#0" expanded="false" />
+            <element signature="e#166#703#0" expanded="false" />
+            <element signature="e#735#966#0" expanded="false" />
+            <element signature="e#735#867#1" expanded="false" />
+            <element signature="e#1020#1024#0" expanded="false" />
+            <element signature="e#1122#1335#0" expanded="false" />
+            <element signature="e#1426#2060#0" expanded="false" />
+            <element signature="e#2143#2209#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.5/random.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="723" column="0" selection-start-line="723" selection-start-column="0" selection-end-line="723" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bots/SmartBot1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="e#166#695#0" expanded="false" />
+            <element signature="e#727#958#0" expanded="false" />
+            <element signature="e#727#859#1" expanded="false" />
+            <element signature="e#1017#1021#0" expanded="false" />
+            <element signature="e#1797#2002#0" expanded="false" />
+            <element signature="e#2093#2715#0" expanded="false" />
+            <element signature="e#2793#2859#0" expanded="false" />
+            <element signature="e#3760#5338#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bots/example.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helpers/graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helpers/GraphT2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="32" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helpers/MatrixComputer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bots/example.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helpers/graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="156" column="6" selection-start-line="156" selection-start-column="6" selection-end-line="156" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm50/system/python_stubs/221235111/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="3587" column="8" selection-start-line="3587" selection-start-column="8" selection-end-line="3587" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -685,22 +767,69 @@
     <entry file="file://$PROJECT_DIR$/bots/random_bot.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+          <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
           <folding>
-            <element signature="e#149#686#0" expanded="false" />
-            <element signature="e#718#945#0" expanded="false" />
-            <element signature="e#718#850#1" expanded="false" />
-            <element signature="e#999#1003#0" expanded="false" />
+            <element signature="e#166#703#0" expanded="false" />
+            <element signature="e#735#966#0" expanded="false" />
+            <element signature="e#735#867#1" expanded="false" />
+            <element signature="e#1020#1024#0" expanded="false" />
+            <element signature="e#1122#1335#0" expanded="false" />
+            <element signature="e#1426#2060#0" expanded="false" />
+            <element signature="e#2143#2209#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warhead/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3327869">
+          <caret line="128" column="8" selection-start-line="128" selection-start-column="8" selection-end-line="128" selection-end-column="8" />
+          <folding>
+            <element signature="e#231#496#0" expanded="false" />
+            <element signature="e#231#453#1" expanded="false" />
+            <element signature="e#537#1163#0" expanded="false" />
+            <element signature="e#537#832#1" expanded="false" />
+            <element signature="e#1223#1548#0" expanded="false" />
+            <element signature="e#1223#1438#1" expanded="false" />
+            <element signature="e#1585#2093#0" expanded="false" />
+            <element signature="e#1585#2068#1" expanded="false" />
+            <element signature="e#2127#2405#0" expanded="false" />
+            <element signature="e#2127#2380#1" expanded="false" />
+            <element signature="e#2444#2779#0" expanded="false" />
+            <element signature="e#2444#2658#1" expanded="false" />
+            <element signature="e#2817#3137#0" expanded="false" />
+            <element signature="e#2817#3029#1" expanded="false" />
+            <element signature="e#3186#3900#0" expanded="false" />
+            <element signature="e#3186#3706#1" expanded="false" />
+            <element signature="e#3945#4717#1" expanded="false" />
+            <element signature="e#5047#5810#0" expanded="false" />
+            <element signature="e#5047#5638#1" expanded="false" />
+            <element signature="e#5872#6722#0" expanded="false" />
+            <element signature="e#5872#6493#1" expanded="false" />
+            <element signature="e#6808#7879#0" expanded="false" />
+            <element signature="e#6808#7597#1" expanded="false" />
+            <element signature="e#8411#8792#1" expanded="false" />
+            <element signature="e#9420#10309#0" expanded="false" />
+            <element signature="e#9420#10112#1" expanded="false" />
+            <element signature="e#10355#11138#0" expanded="false" />
+            <element signature="e#10355#10909#1" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bots/SmartBot1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9245902">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.3327869">
+          <caret line="44" column="40" selection-start-line="0" selection-start-column="0" selection-end-line="149" selection-end-column="19" />
           <folding>
-            <element signature="e#94#98#0" expanded="false" />
+            <element signature="e#166#695#0" expanded="false" />
+            <element signature="e#727#958#0" expanded="false" />
+            <element signature="e#727#859#1" expanded="false" />
+            <element signature="e#1017#1021#0" expanded="false" />
+            <element signature="e#1797#2002#0" expanded="false" />
+            <element signature="e#2093#2715#0" expanded="false" />
+            <element signature="e#2793#2859#0" expanded="false" />
+            <element signature="e#3760#5338#0" expanded="false" />
           </folding>
         </state>
       </provider>
