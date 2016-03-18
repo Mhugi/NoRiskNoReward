@@ -164,7 +164,7 @@ class Bot(RandomBot):
         print reinforcement_count
         left_to_reinforce = reinforcement_count
         all_my_cells = list(world.get_my_cells())
-        sorted_pressure = sort_cells_by_pressure(world, all_my_cells)
+        sorted_pressure = self.sort_cells_by_pressure(world, all_my_cells)
         int
         index = 0;
         for _ in range(reinforcement_count):
