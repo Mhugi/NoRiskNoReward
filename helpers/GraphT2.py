@@ -1,18 +1,13 @@
 import json
 
-from scipy.io.matlab.tests.test_streams import fs
-
+#from scipy.io.matlab.tests.test_streams import fs
+from warhead.util import *
 from helpers import graph
 from helpers.graph import Graph
 
 rawMap = None
 rawCont = None
 
-with open('./srcdata/world-map.pyg', 'r', encoding='utf8') as f:
-    rawMap = f.read().splitlines()
-
-with open('./srcdata/world-continent.txt', 'r', encoding='utf8') as f:
-    rawCont = f.read().splitlines()
 
 # out map
 g = Graph()
