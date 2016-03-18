@@ -118,7 +118,14 @@ class Bot(RandomBot):
         for cell in all_my_cells:
           all_my_adj_cells = world.get_adj_cells(cell)
           if len(all_my_adj_cells) == 0:
-            continue
+                continue
+          elif len(all_my_adj_cells) == 1: 
+                adj = all_my_adj_cells[0]
+                attack_size = cell_army_num - 1
+                world.add_action(move, cell, adj, attack_size)
+          else:
+                all_sets_of_attacks = get_k_subsets(cell_army_num, len(all_my_adj_cells) + 1)
+                attack_vector = random.choice(all_sets_of_attacks)
           bestCell = self.BestCellToAttack(cell.armySize,world,all_my_adj_cells)
           world.add_action(move,cell,bestCell,cell.armySize-1)
            
@@ -128,7 +135,7 @@ class Bot(RandomBot):
       bestCell = listOfCells[0]
       for i in range(len(listOfCells)):
         curr = world.simulate_combat_at_cell(listOfCells[i],sizeOfArmyInCell,listOfCells[i].armySize)
-        if curr > max:
+        if curr > max and curr!=sizeOfArmyInCell:
           max = curr
           bestCell = listOfCells[i]
       return bestCell
