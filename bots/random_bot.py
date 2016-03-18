@@ -65,10 +65,10 @@ class Bot(object):
 
         return move
 
-    def reinforcements(self, turn_num, reinforcement_count, world):
+    def reinforcments(self, move, turn_num, reinforcement_count, world):
         raise NotImplementedError("Place your own reinforment logic here")
 
-    def move_and_attack(self, turn_num, reinforcement_count, world):
+    def move_and_attack(self, move, turn_num, reinforcement_count, world):
         raise NotImplementedError("Place your own move / attack logic here")
 
     def get_move_for_turn(self, turn_num, reinforcement_count, world):
@@ -76,7 +76,7 @@ class Bot(object):
         
         # Place reinformements on your cells
         try:
-            self.reinformements(turn_num, reinforcement_count, world)
+            self.reinforcments(move, turn_num, reinforcement_count, world)
         except Exception, err:
             try:
                 print ("ERROR: An exception of type %s occured with the following message %s\n" %
@@ -91,7 +91,7 @@ class Bot(object):
             
         # Move forces / attack
         try:
-            self.move_and_attack(turn_num, reinforcement_count, world)
+            self.move_and_attack(move, turn_num, reinforcement_count, world)
         except Exception, err:
             try:
                 print ("ERROR: An exception of type %s occured with the following message %s\n" %
