@@ -28,8 +28,8 @@ def get_k_subsets(n, k):
         Given a number n, provide all combinations of k positive (or zero)
         numbers whose sum is n.
     '''
-    print "n = " + str(n)
-    print "k = " + str(k)
+    # print "n = " + str(n)
+    # print "k = " + str(k)
     return get_k_subsets_aux(n, k, [], [])
 
 
@@ -37,14 +37,16 @@ class Bot(object):
     def __init__(self):
         pass
 
-    def get_move_for_turn(self, turn_num, reinforcement_count, world):
-        move = Move([], [])
-
+    def assign_random_reinforcements(self, move, turn_num, reinforcement_count, world):
         all_my_cells = list(world.get_my_cells())
         for _ in range(reinforcement_count):
             cell = random.choice(all_my_cells)
             world.add_reinforcement(move, cell, 1)
+        
+        return move
 
+    def assign_random_attacks(self, move, turn_num, reinforcement_count, world):
+        all_my_cells = list(world.get_my_cells())
         for cell in all_my_cells:
             all_my_adj_cells = world.get_adj_cells(cell)
             if len(all_my_adj_cells) == 0:
@@ -59,5 +61,37 @@ class Bot(object):
                 adj = all_my_adj_cells[i]
                 attack_size = attack_vector[i]
                 world.add_action(move, cell, adj, attack_size)
+
+        return move
+
+    def get_move_for_turn(self, turn_num, reinforcement_count, world):
+        move = Move([], [])
+        
+        # Place reinformements on your cells
+        try:
+            raise NotImplementedError("Place your own reinforment logic here")
+        except Exception, err:
+            try:
+                print ("ERROR: An exception of type %s occured with the following message %s\n" %
+                       (str(type(err)), str(err)) + "Assigning a random reinforcement move.")
+                move = Bot.assign_random_reinforcements(self, move, turn_num, reinforcement_count, world)
+                
+            except Exception, random_err:
+                print ("ERROR: An exception of type %s occured during RANDOM MOVE with the following message %s\n" %
+                       (str(type(random_err)), str(random_err)))
+            
+        # Move forces / attack
+        try:
+            raise NotImplementedError("Place your own move / attack logic here")
+            
+        except Exception, err:
+            try:
+                print ("ERROR: An exception of type %s occured with the following message %s\n" %
+                       (str(type(err)), str(err)) + "Assigning a random reinforcement move.")
+                move = Bot.assign_random_attacks(self, move, turn_num, reinforcement_count, world)
+                
+            except Exception, random_err:
+                print ("ERROR: An exception of type %s occured during RANDOM MOVE with the following message %s\n" %
+                       (str(type(random_err)), str(random_err)))
 
         return move
