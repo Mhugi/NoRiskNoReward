@@ -65,11 +65,11 @@ class Bot(object):
     def assign_random_reinforcements(self, move, turn_num, reinforcement_count, world):
         all_my_cells = list(world.get_my_cells())
 
-    for _ in range(reinforcement_count):
-        cell = random.choice(all_my_cells)
-        world.add_reinforcement(move, cell, 1)
+        for _ in range(reinforcement_count):
+            cell = random.choice(all_my_cells)
+            world.add_reinforcement(move, cell, 1)
 
-    return move
+        return move
 
     def assign_random_attacks(self, move, turn_num, reinforcement_count, world):
         all_my_cells = list(world.get_my_cells())
@@ -91,6 +91,7 @@ class Bot(object):
         return move
 
     def reinforcements(self, move, turn_num, reinforcement_count, world):
+        print "Hugi reinforcmnet"
         left_to_reinforce = reinforcement_count
         all_my_cells = list(world.get_my_cells())
         sorted_pressure = sort_cells_by_pressure(world, all_my_cells)
