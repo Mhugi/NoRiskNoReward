@@ -1,8 +1,3 @@
-# The graph class and graph methods
-import json
-from ./warhead import *
-
-
 class Node(object):
     "The node for graph. game = country index"
 
@@ -20,10 +15,12 @@ class Node(object):
     # worth, or value, from degree, etc
     worth = 0
 
-    def __init__(self, name, continent):
+    def __init__(self, name, continent, cell):
         self.name = name
         self.continent = continent
         self.adjList = []
+        self.cell = cell
+    
 
     def addEdge(self, neighbour):
         if neighbour not in self.adjList:
@@ -44,9 +41,10 @@ class Graph(object):
 ##################################
 
 class helper(object):
-    def __init__(self, dg, regions=[], borders=[], attackable=[], dist=[], shape=[], continentFrac=[]):
+    def __init__(self, dg, world, regions=[], borders=[], attackable=[], dist=[], shape=[], continentFrac=[]):
         # the dynamic graph for use below
         self.g = dg
+        self.world = world
 
     def regions(self, player):
         """ split player's countries into regions = connected subgraph, of the dynamic graph dg"""
@@ -214,8 +212,8 @@ class helper(object):
 
     cont = None
     # continents
-    with open('./srcdata/continents.json') as data_file:
-        cont = json.load(data_file)
+    #with open('./srcdata/continents.json') as data_file:
+    #    cont = json.load(data_file)
 
     # helper, compute fraction of continent owned
     def continentFrac(self, node):
@@ -230,28 +228,32 @@ class helper(object):
 
         return self.allyNum / len(contclist)
 
-
-    def makeG():
-        conti = {}
-        for touple_ in list(map((lambda c: c.split(" ")), rawCont)):
-            conti[int(touple_[1])] = touple_[0]
+            
+    def transferBoardToGraph(self):
+        board = self.world.get_all_cells()
+        for cell in board:
+            if self.world.get_cell_if_valid(cell.x,cell.y):
+                self.g.addNode(str(cell.i) + "," + str(cell.j), "0", cell)
+                if cell.team == self.world.get_my_team():
+                    self.g.nodes[str(cell.i) + "," + str(cell.j)].army = cell.armySize
+                elif cell.team is None:
+                    self.g.nodes[str(cell.i) + "," + str(cell.j)].army = 0
+                else:
+                    self.g.nodes[str(cell.i) + "," + str(cell.j)].army = -1*cell.armySize
+                
+                adj_cells = self.world.get_adj_cells(cell)
+                for adj_cell in adj_cells:
+                    self.g.nodes[str(cell.i) + "," + str(cell.j)].addEdge(adj_cell)
+                
     
-        # there's 42 countries indexed  0-41; access by g.nodes[i]
-        for country in clist:
-            g.addNode(country, conti[country])
-    
-        for line in rawMap:
-            line_ = line.split(" ")
-            # line is now [src, -, target, dist]
-            src = int(line_[0])
-            tar = int(line_[2])
-    
-            #  add neigh's key instead of object (g is undirected)
-            g.nodes[src].addEdge(tar)
-            g.nodes[tar].addEdge(src)
+    def printGraph(self):
+        for node in self.g.nodes:
+            print node.name
+            print node.army
+            
 
-#makeG()
+            
+            
 
-print(g.nodes[0].adjList)
-# helper ends
+
 
